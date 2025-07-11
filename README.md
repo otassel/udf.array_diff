@@ -2,7 +2,7 @@
 BigQuery UDF to return items from the first array that are not in the second one
 
 ```sql
-CREATE OR REPLACE FUNCTION `altancy.udf.array_diff`(array1 ANY TYPE, array2 ANY TYPE)
+CREATE OR REPLACE FUNCTION `udf.array_diff`(array1 ANY TYPE, array2 ANY TYPE)
 AS (
     (
         SELECT ARRAY_AGG(val)
